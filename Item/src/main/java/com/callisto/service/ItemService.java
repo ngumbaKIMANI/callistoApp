@@ -4,15 +4,11 @@ import com.callisto.entity.Item;
 import com.callisto.entity.ItemRequest;
 import com.callisto.repository.ItemRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.math.BigDecimal;
 
 @Service
 @Slf4j
 public class ItemService {
-    @Autowired
     private ItemRepository itemRepository;
 
     public Item saveItem(ItemRequest itemRequest) {
